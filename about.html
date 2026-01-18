@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>PORTFOLIO</title>
+</head>
+<body>
+    <!--ENCABEZADO-->
+    <header>
+        <nav class="nav1">
+            <div class="logo">
+                <img src="resources/images/paloma-color.png" alt="web logo">
+                <h1>dookie<span class="academy">zookie</span></h1>
+            </div>
+            <ul class="nav">
+                <li><a href="html2.html"><strong>Home</strong></a></li><li><a href="contact.html"><strong>Contact</strong></a></li><li><a href="skills.html"><strong>Skills</strong></a></li>
+              </ul>
+        </nav>
+    </header>
+    <div class="description">
+        <img src="resources/images/descripción.png">
+        <div class="text-container">
+        <p>HOLAAAAA
+          Soy Carmen, <strong>traductora y diseñadora web</strong><br>
+          (¡y también artista!)
+            <br>
+        <br>Me encanta todo lo creativo y tengo mi proyecto personal,<br> pero una tiene que buscarse la vida…<br>así que tras estudiar traducción, quise aprovechar<br> el haber sido siempre rata de internet <br>y estudié <strong>Desarrollo Front-End</strong>,<br>focalizándolo sobre todo en <strong>Diseño Web</strong> que es lo que más disfruto.
+        <br>
+        <br>
+        Estoy abierta a trabajar en distintos tipos de proyectos <br>siempre y cuando me muevan algo y ambas partes <br> nos respetemos y podamos jugar con la creatividad a tope.
+      </p>
+        </div>
+    </div>
+    <div id="draggable" class="ui-widget-content">
+        <img src="resources/images/me-paint.png" draggable="true">
+      </div>
+      <div id="draggable2" class="ui-widget-content">
+        <img src="resources/images/productos tienda.png" draggable="true">
+      </div>
+      <div id="draggable3" class="ui-widget-content">
+        <img src="resources/images/gráfico.png" draggable="true">
+      </div>
+      <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+      <script>
+      $( function() {
+        $( "#draggable" ).draggable();
+      } );
+      $( function() {
+        $( "#draggable2" ).draggable();
+      } );
+      $( function() {
+        $( "#draggable3" ).draggable();
+      } );
+      </script>
+</body>
+<!--PIE DE PÁGINA-->
+<footer>
+    <h6>© 2024 dookiezookie Portfolio. All rights reserved.</h6>
+</footer>
+</html>

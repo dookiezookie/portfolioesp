@@ -1,0 +1,360 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Cotton Cloud", sans-serif;
+    src: url(resources/cotton-cloud.ttf);
+  }
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* LOGO */
+.logo img {
+    height: 42px;
+    padding-left: 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo h1 {
+    font-size: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 3px;
+    color: rgb(217, 113, 52);
+}
+
+.academy {
+    font-weight: bold;
+    color: rgb(255, 179, 138);
+    opacity: 0.5;
+}
+/* APARTADOS */
+.nav1 {
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 100;
+    background-color: rgb(255, 252, 247);
+}
+  nav a {
+    padding-right: 16px;
+    color: rgb(217, 113, 52);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: right;
+    float: right;
+    font-size: 18px;
+    display: inline-flex;
+    list-style-type: none;
+    padding-top: 20px;
+    }
+
+    nav a:hover {
+        color: rgb(253, 214, 105);
+        opacity: 0.5;
+    }
+    ul {
+        list-style-type: none;
+        text-align: right;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      
+      li {
+        display: inline-flex;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+/* PÁGINA INICIO */
+
+.encab img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0cm;
+}
+
+
+/* PÁGINA PRINCIPAL */
+
+.bdy {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.bdy img {
+    width: 800px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bdy img:hover{
+    transform: scale(1.2);
+}
+
+.bdy h1 {
+    line-height: 1;
+    color: rgb(249, 145, 84);
+    font-family: "Cotton Cloud", sans-serif;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.popup{ 
+    width: 800px;
+    height: auto;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    display: none;
+}
+
+.popup button{
+    display: block;
+    margin: 0 0 10px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: rgb(217, 113, 52);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.file-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    float: left;
+    padding-left: 20px;
+}
+
+.img-1 {
+    width: 90px;
+    height: auto;
+    margin-top: 70px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.img-2 {
+    width: 90px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.img-3 {
+    width: 90px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.img-4 {
+    width: 70px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.file-container h6{
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+    color: black;
+}
+
+.file-container a{
+    transition-property: all;
+    transition-duration: 0.20s;
+    transition-timing-function: linear;
+}
+
+.file-container a:hover{
+    transform: scale(1.3);
+}
+
+/* PÁGINA ABOUT */
+.description {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.description img{
+    width: 80%;
+    height: auto;
+    align-content: center;
+    margin-top: 100px;
+}
+
+.text-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -10%);
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 14px;
+}
+#draggable,
+#draggable2,
+#draggable3 {
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+    cursor: move;
+}
+
+#draggable img {
+    width: 450px;
+    height: auto;
+}
+
+#draggable2 img {
+    width: 800px;
+    height: auto;
+}
+
+#draggable3 img{
+    width: 900px;
+    height: auto;
+}
+
+/* PÁGINA SKILLS */
+
+.columns {
+    display: flex;
+    margin: 20px;
+  }
+  .columns__item {
+    width: 50%;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .columns__item img {
+    display: inline;
+    padding-left: 30px;
+    align-items: center;
+
+  }
+
+  .tskills img {
+    width: 700px;
+    height: auto;
+  }
+
+  .pskills img{
+    width: 500px;
+    height: auto;
+  }
+
+  .columns__item p {
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: "Cotton Cloud", sans-serif;
+    font-size: 60px;
+    color: rgb(253, 214, 105);
+  }
+
+  figure {
+    margin: 0;
+  }
+
+/* PÁGINA CONTACT */
+
+.contactar img{
+    width: 85%;
+    height: auto;
+    display: block;
+    padding-top: 90px;
+    padding-left: 25%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* PÁGINA PROJECTS */
+
+.web-preview{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 220px;
+}
+
+.web-preview img{
+    margin-top: 150px;
+    padding-top: 30px;
+    width: 250px;
+    height: auto;
+    transition-property: all;
+    transition-duration: 0.20s;
+    transition-timing-function: linear;
+}
+
+.overlay-text{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: rgb(253, 214, 105);
+}
+
+.web-preview img:hover{
+    transform: scale(1.3);
+}
+
+
+/* PIE DE PÁGINA */
+
+footer h6 {
+    font-size: small;
+    color:rgb(217, 113, 52);
+    width: 100%;
+    margin-left: 15px;
+    padding-top: 30px;
+}
